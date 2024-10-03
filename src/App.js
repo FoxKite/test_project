@@ -20,7 +20,7 @@ function App() {
                 <QueryClientProvider client={queryClient}>
                     <ModalContextProvider>
                         <ThemeProvider theme={Theme}>
-                            <BrowserRouter>
+                            <BrowserRouter basename='/test_project'>
                                 <AppRouter />
                             </BrowserRouter>
                         </ThemeProvider>
