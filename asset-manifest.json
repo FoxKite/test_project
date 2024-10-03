@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/test_project/static/css/main.e617b9fa.css",
+    "main.js": "/test_project/static/js/main.3f030d99.js",
+    "static/media/avatar_full.png": "/test_project/static/media/avatar_full.d335bae711fbe2c1cb17.png",
+    "static/media/avatar_full_mobile.png": "/test_project/static/media/avatar_full_mobile.37ae74da939c4cce9ed5.png",
+    "static/media/avatar_mob.png": "/test_project/static/media/avatar_mob.38378d26728b2c121434.png",
+    "static/media/avatar_active.png": "/test_project/static/media/avatar_active.4854d5cf054b53ba875f.png",
+    "index.html": "/test_project/index.html",
+    "static/media/CloseIcon.svg": "/test_project/static/media/CloseIcon.b4730236aae94b865d1b87611b2dfc00.svg",
+    "static/media/SolidIcon.svg": "/test_project/static/media/SolidIcon.cadde7b12b5e79d245057a80e9c8410d.svg",
+    "static/media/BackarrowIcon.svg": "/test_project/static/media/BackarrowIcon.58f1e3c360013860947b9d88c6c36ffe.svg",
+    "main.e617b9fa.css.map": "/test_project/static/css/main.e617b9fa.css.map",
+    "main.3f030d99.js.map": "/test_project/static/js/main.3f030d99.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e617b9fa.css",
+    "static/js/main.3f030d99.js"
+  ]
+}
