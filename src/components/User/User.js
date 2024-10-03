@@ -11,12 +11,9 @@ import SuccessIcon from "../../images/SuccessIcon.png"
 // import { useMask } from '@react-input/mask';
 import { isValidEmail } from "../../service/function"
 
-const MyInputLabel = ({ children }) => (
-    <InputLabel><Typography variant="text1" sx={{ color: '#161616' }}>{children}</Typography></InputLabel>
-)
-
+const MyMenuItem = ({children}) => (<MenuItem variant='text2' sx={{ color: '#9C9C9C', pl: 0 }}>{children}</MenuItem>)
+const MyInputLabel = ({ children }) => (<InputLabel><Typography variant="text1" sx={{ color: '#161616' }}>{children}</Typography></InputLabel>)
 const MyController = (props) => (<Stack spacing='10px'><Controller {...props} /></Stack>)
-
 
 const User = () => {
 
@@ -68,11 +65,11 @@ const User = () => {
                         </Box>
                         <Divider />
                         <MenuList>
-                            <MenuItem variant='text2' sx={{ color: '#9C9C9C', pl: 0 }}>Рабочее пространство</MenuItem>
+                            <MyMenuItem>Рабочее пространство</MyMenuItem>
                             <Divider />
-                            <MenuItem variant='text2' sx={{ color: '#9C9C9C', pl: 0 }}>Приватность</MenuItem>
+                            <MyMenuItem>Приватность</MyMenuItem>
                             <Divider />
-                            <MenuItem variant='text2' sx={{ color: '#9C9C9C', pl: 0 }}>Безопасность</MenuItem>
+                            <MyMenuItem>Безопасность</MyMenuItem>
                             <Divider />
                         </MenuList>
                     </Box>
@@ -99,7 +96,6 @@ const User = () => {
                         </>
                         }
                     />
-
 
                     <MyController
                         name='username'
@@ -160,7 +156,7 @@ const User = () => {
                                 variant="outlined"
                                 error={Boolean(error)}
                                 helperText={error && error.message}
-                            // inputRef={inputRef} // for mask
+                                // inputRef={inputRef} // for mask
                             />
                         </>
                         }

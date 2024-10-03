@@ -11,7 +11,6 @@ export const useUsersQuery = () => {
             queryKey: ['users'],
             queryFn: () => loadUsers(),
             refetchOnMount: false,
-            // staleTime: TIME_UPDATE,
             onSuccess:(data) => {
                 dispatch(setInitial(data.map(u=> ({
                     id: u.id,

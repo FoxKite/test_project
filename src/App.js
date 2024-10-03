@@ -11,23 +11,21 @@ import { ThemeProvider } from '@mui/material';
 
 export const queryClient = new QueryClient()
 
-
 function App() {
     return (
-        <>
-        Test
-            <Provider store={store}>
-                <QueryClientProvider client={queryClient}>
-                    <ModalContextProvider>
-                        <ThemeProvider theme={Theme}>
-                            <BrowserRouter basename='/test_project'>
-                                <AppRouter />
-                            </BrowserRouter>
-                        </ThemeProvider>
-                    </ModalContextProvider>
-                </QueryClientProvider>
-            </Provider>
-        </>
+        <Provider store={store}>
+            <QueryClientProvider client={queryClient}>
+                <ModalContextProvider>
+                    <ThemeProvider theme={Theme}>
+                        <BrowserRouter
+                        // basename='/test_project'
+                        >
+                            <AppRouter />
+                        </BrowserRouter>
+                    </ThemeProvider>
+                </ModalContextProvider>
+            </QueryClientProvider>
+        </Provider>
     )
 }
 

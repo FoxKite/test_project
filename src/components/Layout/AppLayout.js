@@ -1,13 +1,24 @@
 import { Outlet } from "react-router"
 import { useUsersQuery } from "../../reactQuery/useUser"
 import Logo from "../../images/logo.png"
-import { Box, Container, Stack } from "@mui/material"
+import { Box, Container, Stack, CircularProgress } from "@mui/material"
+
 
 const AppLayout = () => {
 
     const { isLoading, error } = useUsersQuery()
 
-    if (isLoading) return <>isLoading</>
+    if (isLoading) return (
+        <Box sx={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+        }}>
+            <CircularProgress color="inherit" />
+        </Box>
+    )
+
     if (error) return <>Error</>
 
     return (
@@ -16,14 +27,14 @@ const AppLayout = () => {
                 <Box sx={{
                     mt: { md: '16px', xs: '13px' },
                     mb: { md: '16px', xs: '13px' },
-                    ml: { md: '150px', xs: '16px' }
                 }}>
-                    <img alt="At-Work" src={Logo} />
+                    <Container sx={{ width: { md: '1160px', xs: '375px' } }}>
+                        <img alt="At-Work" src={Logo} />
+                    </Container>
                 </Box>
             </Stack>
 
-            <Container sx={{ width: { md: '1160px', xs: '375px' }, }}>
-
+            <Container sx={{ width: { md: '1160px', xs: '375px' } }}>
                 <Outlet />
             </Container>
         </>

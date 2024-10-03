@@ -82,7 +82,6 @@ const ModalAlert = ({ visible = false, onClose, children, }) => {
             <Stack
                 sx={{
                     width: '310px',
-                    // padding: 1.5,
                     position: 'absolute',
                     top: '50%',
                     left: '50%',

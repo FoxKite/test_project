@@ -13,17 +13,19 @@ const UserPage = () => {
     }
     return (
         <>
-        
+
             <Stack alignItems='start' justifyContent='center' sx={{
-                height: {md:'56px', xs:'50px'},
-                mb: {md:3, xs:2.5}
+                height: { md: '56px', xs: '50px' },
+                mb: { md: 3, xs: 2.5 }
             }}>
-                <Button onClick={handleClickBack} component={Stack} spacing={1} direction='row' alignItems='center'            >
+                <Button onClick={handleClickBack} component={Stack} spacing={1} direction='row' alignItems='center'>
                     <Box><SvgIcon><BackArrowIcon /></SvgIcon></Box>
-                    <Typography variant="headline" sx={{
-                        textTransform: 'none',
-                        color: '#595959',
-                    }}>Назад</Typography>
+                    <Box>
+                        <Typography variant="headline" sx={{
+                            textTransform: 'none',
+                            color: '#595959',
+                        }}>Назад</Typography>
+                    </Box>
                 </Button>
             </Stack>
 
