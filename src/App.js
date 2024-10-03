@@ -18,7 +18,7 @@ function App() {
                 <ModalContextProvider>
                     <ThemeProvider theme={Theme}>
                         <BrowserRouter
-                        // basename='/test_project'
+                            basename='/test_project'
                         >
                             <AppRouter />
                         </BrowserRouter>
